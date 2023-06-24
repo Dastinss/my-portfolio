@@ -1,0 +1,32 @@
+@import '../../../common/styles/sass/variables';
+
+.title {
+  margin: 0 0 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 10;
+  color: $textColor;
+  text-transform: capitalize;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  position: relative; /*// подготовили почву для псевдоэлемета "-----" линия*/
+  .title h2 {
+    margin: 0;
+
+  }
+  &::before { /*// псевдоэлемент*/
+    content: ''; /*// надпись - если не нужна, просто ставим кавычки*/
+    position: absolute;
+    background: $primaryColor;
+    width: 55px;
+    height: 1px;
+    bottom: -30px;
+    left: 50%; /*// выравнивание псевдоэлемента (рысочки) по центру*/
+    transform: translate(-50%, 50%); /*// выравнивание псевдоэлемента (рысочки) по центру*!*/
+  }
+}
+
+
+
+
+
