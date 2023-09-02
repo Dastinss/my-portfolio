@@ -7,6 +7,7 @@ import Projects from "./projects/Projects";
 import Hire from "./hire/Hire";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
+import Button from "./common/components/button/Button";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Hire/>
             <Contacts/>
             <Footer/>
+            <Button/>
         </div>
     );
 }

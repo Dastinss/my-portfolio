@@ -1,22 +1,38 @@
 import React from 'react';
-import style from './Footer.module.css'
-import styleContainer from "../common/styles/Container.module.css";
+import styles from './Footer.module.scss'
+import Title from "../common/components/title/Title";
 
 const Footer = () => {
     return (
-        <div className={style.footer}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Sergiy Daragan</h2>
-                <div className={style.socialIcons}>
-                    <div className={style.socialIcon}></div>
-                    <div className={style.socialIcon}></div>
-                    <div className={style.socialIcon}></div>
-                    <div className={style.socialIcon}></div>
+        <div className={styles.footer}>
+            <div className={styles.container}>
+                <Title text={'Sergiy Daragan'}/>
+                <div className={styles.socialIcons}>
+                    <div className={styles.socialIcon}>
+                        <a href=''>
+                            {/*<img src={telegramIcon} alt={''}/>*/}
+                        </a>
+                    </div>
+                    <div className={styles.socialIcons}>
+                        <a href=''>
+                            {/*<img src={facebookIcon} alt={''}/>*/}
+                        </a>
+                    </div>
+                    <div className={styles.socialIcons}>
+                        <a href=''>
+                            {/*<img src={linkedInIcon} alt={''}/>*/}
+                        </a>
+                    </div>
+                    <div className={styles.socialIcons}>
+                        <a href=''>
+                            {/*<img src={tweeterIcon} alt={''}/>*/}
+                        </a>
+                    </div>
                 </div>
-                <span className={style.copyright}>© 2023, All Rights Reserved</span>
+                <span className={styles.copyright}>© 2023, All Rights Reserved</span>
             </div>
         </div>
     );
-};
+}
 
 export default Footer;

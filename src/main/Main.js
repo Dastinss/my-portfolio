@@ -1,19 +1,22 @@
 import React from 'react';
-import style from './Main.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import styles from './Main.module.scss'
+// import '../common/styles/sass/mixins.sass';
 
 const Main = () => {
     return (
-        <div className={style.mainblock}>
-            <div className={styleContainer.container}>
-                <div className={style.greetings}>
+        <div className={styles.mainBlock}>
+            <div className={styles.container}>
+                <div className={styles.greetings}>
                     <span>Hi There</span>
-                    <h1>I`m Sergiy Daragan</h1>
-                    <p>Frontend Developer</p>
+                    <span>I`m Sergiy <span>Daragan</span></span>
+                    <h1>Frontend Developer</h1>
                 </div>
-                <div className={style.photo}>
+                <div className={styles.photo}>
+                    <div className={styles.image}>
 
+                    </div>
                 </div>
+
             </div>
         </div>
     );
