@@ -1,39 +1,42 @@
-@import '../common/styles/sass/variables.sass';
-@import '../common/styles/sass/mixins.sass';
-
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .mainBlock {
   height: 100vh;
-  @include flex(row, center, center, nowrap)
+  @include flex(row, center, center, nowrap);
+  background-color: $bgColor; // 3 добавил сам
+  color: $textColor; // 3 добавил сам
   padding: 100px 0;
-
+  .particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
   .container {
     @include container();
     @include flex(row, space-around, center, wrap);
-
-    .greetings {
+    .greeting {
       @include flex(column, flex-start, flex-start, nowrap);
-
       span {
         font-size: 16px;
-
         &:nth-child(2) {
           @include text($titleFontFamily, 50px, 1.2, 700);
           letter-spacing: 5px;
           margin: 10px 0;
-
-          span {
-            @include text($titleFontFamily, 50px, 1.2, 700)
+          span { // 3 полосочка под буковками
+            @include text($titleFontFamily, 50px, 1.2, 700);
             letter-spacing: 5px;
             position: relative;
             z-index: 0;
-            display: inline-block;
-
-            &:before {
+            display: inline-block; // 3 для спана во втором элементе
+            &:before {  // 3 делаем псевдоэлемент
               content: '';
               position: absolute;
-              width: 100%;
-              height: 20%;
+              width: 100%; // 3 отталкиваемся от ширины родительского элемента
+              height: 20px;
               background-color: $primaryColor;
               bottom: 0;
               z-index: -1;
@@ -41,24 +44,20 @@
           }
         }
       }
-
       h1 {
         @include text($textFontFamily, 20px, 1.0, 400);
         margin: 0;
       }
-
       @media screen and (max-width: 1143px) {
         align-items: center;
       }
     }
-
     .photo {
       position: relative;
       z-index: 1;
       @media screen and (max-width: 1143px) {
         margin-top: 50px;
       }
-
       .image {
         height: 400px;
         width: 300px;
@@ -70,14 +69,14 @@
           width: 260px;
           transition: .5s;
         }
-        .before {
+        &:before { // 3 создаем для картинки псевдоэлемент - голубая рамочка вокруг фото, играет визуальную роль
           content: '';
           position: absolute;
           height: 110%;
           width: 105%;
           border: 5px solid $primaryColor;
           left: 15px;
-          right: -15px;
+          top: -15px;
           z-index: -1;
         }
       }

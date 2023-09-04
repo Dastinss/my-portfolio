@@ -1,14 +1,18 @@
 import React from 'react';
 import styles from './Main.module.scss'
-// import '../common/styles/sass/mixins.sass';
+import ParticleBackground, { ParticlesContainer } from "./particles/ParticleBackground";
+// import '../common/styles/sass/mixins.scss';
+import Particles from "react-tsparticles";
+
 
 const Main = () => {
     return (
         <div className={styles.mainBlock}>
+            <ParticlesContainer  />
             <div className={styles.container}>
-                <div className={styles.greetings}>
+                <div className={styles.greeting}>
                     <span>Hi There</span>
-                    <span>I`m Sergiy <span>Daragan</span></span>
+                    <span>I am <span>Sergiy Daragan</span></span>
                     <h1>Frontend Developer</h1>
                 </div>
                 <div className={styles.photo}>

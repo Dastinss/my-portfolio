@@ -1,19 +1,18 @@
-@import '../../styles/sass/variables.sass';
-@import '../../styles/sass/mixins.sass';
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
 
 .title {
   margin: 0 0 30px;
   @include text($titleFontFamily, 36px, 1.2, 300); // заюзали миксин
-  //font-family: 'Josefin Sans', sans-serif;
-  //font-weight: 10;
-  //color: $textColor;
   text-transform: capitalize;
-  //font-size: 26px;
-  //line-height: 1.2;
   letter-spacing: 5px;
   position: relative; /*// подготовили почву для псевдоэлемета "-----" линия*/
   text-align: center;
-
+  //font-family: 'Josefin Sans', sans-serif;
+  //font-weight: 10;
+  //color: $textColor;
+  //font-size: 26px;
+  //line-height: 1.2;
   .h2 {
     margin: 0;
   }

@@ -13,17 +13,17 @@ const Footer = () => {
                             {/*<img src={telegramIcon} alt={''}/>*/}
                         </a>
                     </div>
-                    <div className={styles.socialIcons}>
+                    <div className={styles.socialIcon}>
                         <a href=''>
                             {/*<img src={facebookIcon} alt={''}/>*/}
                         </a>
                     </div>
-                    <div className={styles.socialIcons}>
+                    <div className={styles.socialIcon}>
                         <a href=''>
                             {/*<img src={linkedInIcon} alt={''}/>*/}
                         </a>
                     </div>
-                    <div className={styles.socialIcons}>
+                    <div className={styles.socialIcon}>
                         <a href=''>
                             {/*<img src={tweeterIcon} alt={''}/>*/}
                         </a>

@@ -1,11 +1,11 @@
-@import '../common/styles/sass/variables.sass';
-@import '../common/styles/sass/mixins.sass';
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .footer {
   min-height: 300px;
   @include flex(row, center, stretch, nowrap);
   .container {
-    @include container;
+    @include container();
     @include flex(column, flex-start, center, nowrap);
     padding: 100px 0 20px;
     .socialIcons {

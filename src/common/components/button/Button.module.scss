@@ -17,8 +17,8 @@
   &::after {
     content: '';
     position: absolute;
-    width: 50%;
-    height: 10px;
+    width: 50%; // 3 растягивается до 100% при наведении курсора
+    height: 10px; // 3 растягивается до 110% при наведении курсора
     background: $primaryColor;
     bottom: 0;
     z-index: -1;
@@ -27,7 +27,7 @@
   &:hover {
     text-decoration: none;
     color: $textColor;
-    &::after {
+    &::after { // 3 при наведении курсора на кнопку появляются такие стили
       width: 100%;
       height: 110%;
       transition: all 0.3s ease-in-out 0s;

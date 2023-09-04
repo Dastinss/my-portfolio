@@ -1,0 +1,10 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+@import '../../common/components/button/Button.module';
+
+.nav {
+    //border: 1px solid;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}

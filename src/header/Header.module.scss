@@ -1,6 +1,11 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+@import '../common/components/button/Button.module.scss';
+
 .header {
     height: 80px;
-    background-color: deepskyblue;
+    background-color: $bgSecondColor; // 3 добавил сам
+    //color: $textColor; // 3 добавил сам
     align-items: center;
     display: flex;
     justify-content: flex-end;
