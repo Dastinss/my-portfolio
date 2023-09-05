@@ -21,10 +21,10 @@ export const ParticlesContainer = () => {
 
     return (
         <Particles
+            className={styles.particles}
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
-            options={styles.options}
             options={{
                 // background: {
                 //     color: {
@@ -62,7 +62,7 @@ export const ParticlesContainer = () => {
                         color: "#ffffff",
                         distance: 150,
                         enable: true,
-                        opacity: 0.1,
+                        opacity: 0.3,
                         width: 1,
                     },
                     move: {

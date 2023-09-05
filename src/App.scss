@@ -1,0 +1,13 @@
+@import './common/styles/sass/variables.scss';
+
+.App {
+  > div { // 3 задали фон для всех компонент поочередно
+    &:nth-child(n) { // n - все нечетные
+      background-color: $bgSecondColor;
+    }
+
+    &:nth-child(2n) { // 2n - все четные
+      background-color: $bgColor;
+    }
+  }
+}
