@@ -8,7 +8,8 @@ import { Tilt } from 'react-tilt'
 const Main = () => {
     return (
         <div className={styles.mainBlock}>
-            <ParticlesContainer className={styles.particles}/>
+            {/*<ParticlesContainer className={styles.particles}/>*/}
+
             <Fade top>
                 <div className={styles.container}>
                     <div className={styles.greeting}>

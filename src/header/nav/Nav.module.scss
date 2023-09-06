@@ -1,10 +1,22 @@
 @import '../../common/styles/sass/variables';
 @import '../../common/styles/sass/mixins';
-@import '../../common/components/button/Button.module';
 
 .nav {
-    //border: 1px solid;
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
+  width: 340px;
+  @include flex(row, space-between, stretch, nowrap);
+  a {
+    @include text($titleFontFamily, 16px, 1.2, 400);
+    color: $textColor;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: $primaryColor;
+    }
+  }
+  .active {
+    color: $primaryColor;
+  }
+  @media screen and (max-width: 400px) { // 3 ввели альтернативную ширину, появлеется когда ширина БОЛЬШЕ заданной он будет скрываться (адаптивное меню)
+    display: none;
+  }
 }
