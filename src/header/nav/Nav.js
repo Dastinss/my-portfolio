@@ -5,9 +5,25 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scro
 const Nav = () => {
     return (
         <div className={style.nav}>
-            <a href="src/header/nav/Nav">Home</a>
-            <a href="src/header/nav/Nav">About</a>
-            <a href="src/header/nav/Nav">Skills</a>
+            {/*<a href="src/header/nav/Nav">Home</a>*/}
+            <Link
+                activeClass={style.active}
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={1} // при нажатии на ссылку немного не доезжала страница
+                duration={500}
+            >Home</Link> {/* // 3 ссылка на страницу */}
+            {/*<a href="src/header/nav/Nav">About</a>*/}
+            {/*<a href="src/header/nav/Nav">Skills</a>*/}
+            <Link
+                activeClass={style.active}
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={1} // при нажатии на ссылку немного не доезжала страница
+                duration={500}
+            >Skills</Link> {/* // 3 ссылка на страницу */}
             {/*<a href='#projects'>Projects</a>*/}
             <Link
                 activeClass={style.active}
@@ -24,7 +40,15 @@ const Nav = () => {
                 // ignoreCancelEvents={false}
                 // spyThrottle={500}
             >Projects</Link> {/* // 3 ссылка на страницу */}
-            <a href="src/header/nav/Nav">Contact</a>
+            {/*<a href="src/header/nav/Nav">Contact</a>*/}
+            <Link
+                activeClass={style.active}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={1} // при нажатии на ссылку немного не доезжала страница
+                duration={500}
+            >Contact</Link> {/* // 3 ссылка на страницу */}
         </div>
     );
 };

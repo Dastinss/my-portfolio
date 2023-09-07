@@ -3,10 +3,21 @@
 
 .burgerNav {
   width: 100%;
-  background-color: silver;
+  height: 100%;
+  //background-color: silver;
   position: relative;
   .burgerNavItems{
-    @include flex(column, space-between, center, nowrap);
+    @include flex(column, space-between, center, nowrap); // 3 перенесли в .show для скрытия/открытия меню через кнопку
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    background-color: $bgColor;
+    height: 0; // 3 когда закрыто меню, высота его 0
+    padding: 20px;
+    //display: none;
+    transform: translate(0, -150px);
+    transition: 0.7s;
     a {
       @include text($titleFontFamily, 16px, 1.2, 400);
       color: $textColor;
@@ -20,13 +31,18 @@
       color: $primaryColor;
     }
   }
+  .show {
+    //@include flex(column, space-between, center, nowrap); // 3 перенесли в .show для скрытия/открытия меню через кнопку
+    transform: translate(0, 0);
+    height: 150px; // 3 когда открыто меню, высота его 150
+  }
   .burgerBtn{
     width: 30px;
     height: 30px;
     background-color: $primaryColor;
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 20px;
   }
   @media screen and (min-width: 400px) { // 3 ввели альтернативную ширину, появлеется когда ширина меньшье заданной (адаптивное меню)
     display: none;

@@ -8,7 +8,18 @@
 }
 
 .icon {
-    height: 60px;
-    width: 60px;
-    background: rgba(97, 97, 105, 0.33);
+    /*color: #4e93e6;*/
+    height: 80px;
+    width: 80px;
+    /*margin: 0px auto 30px;*/
+    background: rgba(255,255,255,0.1);
+    transform: rotate(45deg);
+    margin-bottom: 40px;
+    display: flex;
+    line-height: 80px;
+    font-size: 30px;
+    box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+    text-align: center;
+
+    transform-origin: center;
 }

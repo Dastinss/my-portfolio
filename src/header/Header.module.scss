@@ -4,9 +4,16 @@
 
 .header {
     height: 80px;
-    background-color: $bgSecondColor; // 3 добавил сам
-    //color: $textColor; // 3 добавил сам
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
+    padding: 0 30px;
+    @include flex(row, flex-end, center, nowrap);
+    opacity: 0.9;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    //background-color: $bgSecondColor; // 3 добавил сам
+    ////color: $textColor; // 3 добавил сам
+    //align-items: center;
+    //display: flex;
+    //justify-content: flex-end;
 }

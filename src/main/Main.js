@@ -4,12 +4,12 @@ import { ParticlesContainer } from "./particles/ParticleBackground";
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import { Tilt } from 'react-tilt'
+import Title from "../common/components/title/Title";
 
 const Main = () => {
     return (
-        <div className={styles.mainBlock}>
-            {/*<ParticlesContainer className={styles.particles}/>*/}
-
+        <div id='home' className={styles.mainBlock}>
+            <ParticlesContainer className={styles.particles}/>
             <Fade top>
                 <div className={styles.container}>
                     <div className={styles.greeting}>

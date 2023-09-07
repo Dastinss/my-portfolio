@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from './BurgerNav.module.scss'
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const BurgerNav = () => {
+    const [menuIsOpen, setMenuIsOpenMenu] = useState(false);
+
+    let onBurgerBtnClick = () => {
+        setMenuIsOpenMenu (
+            !menuIsOpen
+        )
+        // menuIsOpen = !menuIsOpen
+        console.log(menuIsOpen)
+    };
+
     return (
         <div className={style.burgerNav}>
-            <div className={style.burgerNavItems}>
+            <div className={menuIsOpen ? `${style.burgerNavItems} ${style.show}` : style.burgerNavItems}>
                 <a href="src/header/nav/Nav">Home</a>
-                <a href="src/header/nav/Nav">About</a>
+                {/*<a href="src/header/nav/Nav">About</a>*/}
                 <a href="src/header/nav/Nav">Skills</a>
                 {/*<a href='#projects'>Projects</a>*/}
                 <Link
@@ -27,7 +37,9 @@ const BurgerNav = () => {
                 >Projects</Link> {/* // 3 ссылка на страницу */}
                 <a href="src/header/nav/Nav">Contact</a>
             </div>
-            <div className={style.burgerBtn}></div>
+            <div onClick={onBurgerBtnClick} className={style.burgerBtn}>
+
+            </div>
         </div>
     );
 };
