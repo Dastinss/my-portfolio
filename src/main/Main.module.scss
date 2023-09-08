@@ -4,7 +4,7 @@
 .mainBlock {
   height: 100vh;
   @include flex(row, center, center, nowrap);
-  background-color: $bgColor; // 3 добавил сам
+  //background-color: $bgColor; // 3 добавил сам
   color: $textColor; // 3 добавил сам
   padding: 100px 0;
   .particles {

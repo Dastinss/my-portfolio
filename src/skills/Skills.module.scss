@@ -1,0 +1,32 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+@import '../common/components/button/Button.module.scss';
+
+.skillsBlock {
+    min-height: 100vh;
+    //background-color: #d4ffc0;
+    color: $textColor; // 3 добавил сам
+}
+
+.container {
+    @include container();
+    @include flex(row, space-between, center, wrap);
+}
+
+.skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+background-color: #eeeef5;
+}
+
+.skills {
+    //border: 1px solid;
+    width: 100%;
+    @include flex(row, space-between, center, wrap);
+    //display: flex;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+}

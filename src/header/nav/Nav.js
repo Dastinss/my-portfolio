@@ -11,7 +11,7 @@ const Nav = () => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={1} // при нажатии на ссылку немного не доезжала страница
+                offset={75} // при нажатии на ссылку немного не доезжала страница
                 duration={500}
             >Home</Link> {/* // 3 ссылка на страницу */}
             {/*<a href="src/header/nav/Nav">About</a>*/}
@@ -21,7 +21,7 @@ const Nav = () => {
                 to="skills"
                 spy={true}
                 smooth={true}
-                offset={1} // при нажатии на ссылку немного не доезжала страница
+                offset={-75} // при нажатии на ссылку немного не доезжала страница
                 duration={500}
             >Skills</Link> {/* // 3 ссылка на страницу */}
             {/*<a href='#projects'>Projects</a>*/}

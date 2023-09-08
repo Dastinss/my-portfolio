@@ -22,7 +22,7 @@
     background: $primaryColor;
     width: 55px;
     height: 1px;
-    bottom: -30px;
+    bottom: 30px;
     left: 50%; /*// выравнивание псевдоэлемента (рысочки) по центру*/
     transform: translate(-50%, 50%); /*// выравнивание псевдоэлемента (рысочки) по центру*!*/
   }

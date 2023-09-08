@@ -4,7 +4,6 @@
 
 .contactsBlock {
   padding: 100px 0;
-  background-color: $bgColor; // 3 добавил сам
   color: $textColor; // 3 добавил сам
   .container {
     @include container();

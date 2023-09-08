@@ -3,6 +3,7 @@
 
 .footer {
   min-height: 300px;
+  color: $textColor; // 3 добавил сам
   @include flex(row, center, stretch, nowrap);
   .container {
     @include container();
