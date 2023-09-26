@@ -3,30 +3,90 @@
 @import '../common/components/button/Button.module.scss';
 
 .skillsBlock {
-    min-height: 100vh;
-    //background-color: #d4ffc0;
-    color: $textColor; // 3 добавил сам
-}
-
-.container {
+  min-height: 100vh;
+  padding: 50px 0;
+  color: $textColor; // 3 добавил сам
+  .container {
     @include container();
-    @include flex(row, space-between, center, wrap);
-}
+    @include flex(column, flex-start, center, nowrap);
+    text-align: center;
+    //.skillsContainer {
+      //flex-direction: column;
+      //justify-content: flex-start;
+      //flex-wrap: nowrap;
+      //text-align: center;
 
-.skillsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-}
+      .skills {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px; /*// отступили для псевдоэлемента*/
+        align-items: flex-start;
+        @media screen and (max-width: 1129px) {
+          justify-content: center;
+        }
+      }
+    }
+  }
+//}
 
-.title {
-background-color: #eeeef5;
-}
+//.container {
+//  @include container();
+//  @include flex(row, space-between, center, wrap);
+//}
+//
+////.skillsContainer {
+////    flex-direction: column;
+////    justify-content: flex-start;
+////}
+//
+//.title {
+//  background-color: #eeeef5;
+//}
+//
+//.skills {
+//  //border: 1px solid;
+//  width: 100%;
+//  @include flex(row, space-between, center, wrap);
+//  //display: flex;
+//  //justify-content: space-between;
+//  //flex-wrap: wrap;
+//}
 
-.skills {
-    //border: 1px solid;
-    width: 100%;
-    @include flex(row, space-between, center, wrap);
-    //display: flex;
-    //justify-content: space-between;
-    //flex-wrap: wrap;
-}
+
+//старый вариант
+//.skillsBlock {
+//    min-height: 100vh;
+//    //background-color: #d4ffc0;
+//
+//    color: $textColor; // 3 добавил сам
+//
+//    text-align: center; // 3 добавил сам
+//    //display: block;// 3 добавил сам
+//    //margin-left: auto;// 3 добавил сам
+//    //margin-right: auto;// 3 добавил сам
+//}
+//
+//.container {
+//    @include container();
+//    @include flex(row, space-between, center, wrap);
+//}
+//
+//.skillsContainer {
+//    flex-direction: column;
+//    justify-content: flex-start;
+//}
+//
+//.title {
+//background-color: #eeeef5;
+//}
+//
+//.skills {
+//    //border: 1px solid;
+//    width: 100%;
+//    @include flex(row, space-between, center, wrap);
+//    //display: flex;
+//    //justify-content: space-between;
+//    //flex-wrap: wrap;
+//}

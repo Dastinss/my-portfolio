@@ -2,38 +2,112 @@
 @import '../../common/styles/sass/mixins.scss';
 
 .skill {
-    width: 250px;
-    color: $textColor;
-    background-color: $bgSecondColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.iconboxicon {
-    @include flex(row, center, center, nowrap);
-    color: $primaryColor;
-    /*color: #4e93e6;*/
-    height: 80px;
-    width: 80px;
-    background: rgba(255,255,255,0.1);
-    transform: rotate(45deg);
-    margin: 0px auto 30px;// Jefrey
-    line-height: 80px;// Jefrey
-    font-size: 30px;// Jefrey
-    box-shadow: -6px 10px 40px rgba(0,0,0,0.06);// Jefrey
-    text-align: center;// Jefrey
-    transform-origin: center;// Jefrey
-    //margin-bottom: 40px; // Sveta
+    padding: 40px 0px;
+    position: relative;
+    max-width: 340px;
+    margin: 0px auto;
+    .iconboxicon {
+        @include flex(row, center, center, nowrap);
+        color: #4e93e6;
+        height: 80px;
+        width: 80px;
+        margin: 0px auto 30px;
+        background: rgba(255,255,255,0.1);
+        display: block;
+        line-height: 80px;
+        font-size: 30px;
+        box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+        text-align: center;
+        transform: rotate(45deg);
+        transform-origin: center;
+        .description {
+            padding-top: 30px;
+            text-align: center;
+            font: 400 14px/1.8 'Poppins', sans-serif;
+            color: $textColor;
+            .img {
+                transform: rotate(-45deg);// Sveta
+                text-align: center;
+                width: 55%;// Sveta
+            }
+        }
+        .skillTitle {
+            @include text($titleFontFamily, 16px, 1.2, 400);
+            letter-spacing: 1px;
+            margin: 0 0 5px;
+        }
     }
-
-.description {
-    font: 400 14px/1.8 'Poppins', sans-serif;
-    color: $textColor;
 }
+//
+//.iconboxicon {
+//    @include flex(row, center, center, nowrap);
+//    color: $primaryColor;
+//    /*color: #4e93e6;*/
+//    height: 80px;
+//    width: 80px;
+//    background: rgba(255,255,255,0.1);
+//    transform: rotate(45deg);
+//    margin: 0px auto 30px;// Jefrey
+//    line-height: 80px;// Jefrey
+//    font-size: 30px;// Jefrey
+//    box-shadow: -6px 10px 40px rgba(0,0,0,0.06);// Jefrey
+//    text-align: center;// Jefrey
+//    transform-origin: center;// Jefrey
+//    //margin-bottom: 40px; // Sveta
+//    }
+//
+//.description {
+//    font: 400 14px/1.8 'Poppins', sans-serif;
+//    color: $textColor;
+//}
+//
+//.img {
+//    transform: rotate(-45deg);// Sveta
+//    width: 55%;// Sveta
+//}
 
-.img {
-    transform: rotate(-45deg);// Sveta
-    width: 55%;// Sveta
-}
+
+
+////старый вариант
+//.skill {
+//    width: 250px;
+//    color: $textColor;
+//    background-color: $bgSecondColor;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    text-align: center;
+//
+//    padding: 40px 0px;
+//    position: relative;
+//    max-width: 340px;
+//    margin: 0px auto;
+//}
+//
+//.iconboxicon {
+//    @include flex(row, center, center, nowrap);
+//    color: $primaryColor;
+//    /*color: #4e93e6;*/
+//    height: 80px;
+//    width: 80px;
+//    background: rgba(255,255,255,0.1);
+//    transform: rotate(45deg);
+//    margin: 0px auto 30px;// Jefrey
+//    line-height: 80px;// Jefrey
+//    font-size: 30px;// Jefrey
+//    box-shadow: -6px 10px 40px rgba(0,0,0,0.06);// Jefrey
+//    text-align: center;// Jefrey
+//    transform-origin: center;// Jefrey
+//    //margin-bottom: 40px; // Sveta
+//}
+//
+//.description {
+//    font: 400 14px/1.8 'Poppins', sans-serif;
+//    color: $textColor;
+//}
+//
+//.img {
+//    transform: rotate(-45deg);// Sveta
+//    width: 55%;// Sveta
+//}
+

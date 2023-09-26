@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Hire.module.css'
 import styleContainer from "../common/styles/Container.module.css";
+import { HomeSvgSelector } from "../skills/HomeSvgSelector";
 
 const Hire = ( ) => {
     return (
