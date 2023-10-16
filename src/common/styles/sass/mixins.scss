@@ -14,9 +14,9 @@
 
 @mixin flex ($direction, $justifyContent, $alignItems, $wrap){
   display: flex;
-  flex-direction: $direction;
-  justify-content: $justifyContent;
-  align-items: $alignItems;
+  flex-direction: $direction; // меняет направление главной оси (по умолчанию = Х)
+  justify-content: $justifyContent; // всегда выравнивает по главной оси
+  align-items: $alignItems; // всегда выравнивает по второстепенной оси
   flex-wrap: $wrap;
 }
 
