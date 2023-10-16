@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.517afbfa.css",
+    "main.js": "/my-portfolio/static/js/main.1273c1d3.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/photo.jpg": "/my-portfolio/static/media/photo.f2a3b72f5b8e0338e913.jpg",
+    "static/media/todolists-v2.jpg": "/my-portfolio/static/media/todolists-v2.5316888016d881bd8a2a.jpg",
+    "static/media/social-network-v2.jpg": "/my-portfolio/static/media/social-network-v2.304a17d86d23a11a8b25.jpg",
+    "static/media/reactImage.svg": "/my-portfolio/static/media/reactImage.7b5266a6dc1aeeb0be1feee6a7ef7e70.svg",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/cssImage.svg": "/my-portfolio/static/media/cssImage.0980ef70d625c45a56353a93950fba2b.svg",
+    "static/media/jsImage.svg": "/my-portfolio/static/media/jsImage.bffe8173ed7f6082ea16c50903494f2d.svg",
+    "main.517afbfa.css.map": "/my-portfolio/static/css/main.517afbfa.css.map",
+    "main.1273c1d3.js.map": "/my-portfolio/static/js/main.1273c1d3.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.517afbfa.css",
+    "static/js/main.1273c1d3.js"
+  ]
+}
