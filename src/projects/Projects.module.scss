@@ -1,0 +1,31 @@
+@import '../common/styles/sass/variables';
+
+.projectsBlock { // сделали вложенности #2 после загрузки библиотеки SASS
+    background-color: $bgColor;
+    padding: 100px 0;
+    color: $textColor; // 3 добавил сам
+    .projectsContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        .projects {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 30px; /*// отступили для псевдоэлемента*/
+            align-items: flex-start;
+            @media screen and (max-width: 1129px) {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/*//медиа запрос (применять нужно редко) по применению стиля к изменению экрана - скукоживаем до версии мобильника и тогда вступает в работу этот стиль*/
+/*//запрос читаем так: до тех пор пока ширина не будет равна 1125, то применяем стиль 'justify-content: center;'*/
+//@media screen and (max-width: 1129px) {  // закоментили после переноса как вложенность в .projects
+//    .projects {
+//        justify-content: center;
+//    }
+//}

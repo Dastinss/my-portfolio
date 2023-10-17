@@ -1,0 +1,69 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.project {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: $bgSecondColor;
+    .image {
+        height: 300px;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative; /* указали позицию по отношению к которой будет позиционироваться потомок .image::before */
+        //.image::before { /* псевдоєлемент для картинки - более контрастно надпись при наведении на нее курсора и пр.*/
+        &::before { // синтаксис - заменили .image на &
+            position: absolute; /* абсолютно спозиционированный элемент*/
+            content: ''; /* контента у него не будет*/
+            background-color: black;
+            top: 0; /* блок будет на всю ширину и высоту нашего блока, поэтому везде 0*/
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4; /* прозрачность без которой вся наша картинка будет черного цвета или который будет указан в background-color*/
+        }
+        .viewBtn {
+            background-color: $primaryColor;
+            padding: 10px 20px;
+            position: relative; /* получает возможность передвигаться с помощью топ лефт райт ботом и получает возможснть перемещаться Z индексами - сделали кнопку доступной для нажатия, т.к. без этого ее перекрывает псевдоэлеент*/
+            z-index: 1;
+            color: $textColor;
+        }
+    }
+    .projectInfo {
+        padding: 25px 20px;
+        .projectTitle {
+            //font-family: 'Josefin Sans', sans-serif; // перенесли в миксины
+            //font-size: 16px;
+            //line-height: 1.2;
+            //color: $textColor;
+            @include text($titleFontFamily, 16px, 1.2, 400);
+            letter-spacing: 1px;
+            margin: 0 0 5px;
+        }
+        .description {
+            @include text($textFontFamily, 12px,1.8, 400);
+            //font-family: $textFontFamily;
+            //font-size: 12px;
+            //line-height: 1.8;
+            //color: $textColor;
+            font-weight: 400;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

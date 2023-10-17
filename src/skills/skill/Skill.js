@@ -15,7 +15,7 @@ const Skill = ( props ) => {
             {/*</div>*/}
             <div className={style.iconboxicon}>
                 <a>
-                    {this.props.image}
+                    {/*{this.props.image}*/}
                     {/*<img className={style.img} src={jsImage} alt={''}/>*/}
                 </a>
 
